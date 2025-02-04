@@ -1,10 +1,12 @@
 
-@media (max-width: 600px) {
-
+@media (min-width: 320px) and (max-width: 767px) {
+    .nav-list{
+        gap: 15px;
+    }
 }
   
  
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1199px) {
 
 }
  
@@ -59,11 +61,59 @@
     margin-top: 50px;
     max-width: 1360px;
     height: 607px;
-    background-image: url("/src/img/Image-chair.jpg");
+    background-image: linear-gradient(rgba(101, 54, 13, 62%), rgba(101, 54, 13, 62%)), 
+                      url("/src/img/Image-chair.jpg");
+    background-position: center;
     border-radius: 10px;
     color: white;
     font-family: "Montserrat", serif;
     
     justify-content: center;
     align-items: center;
+}
+
+
+                            /* SECTION 2 HOME */
+
+.splide__track{
+
+    max-width: 1360px;
+    margin: 60px auto;
+}
+.splide__list{
+    min-width: 1360px;
+    font-family: "Montserrat", serif;
+    font-weight: bold;
+}
+
+.splide__slide {
+    flex-shrink: 1; 
+    margin-right: 5px; 
+  }
+
+.splide__arrow{
+    background: #ECA52F;
+}
+
+                            /* SECTION 3 HOME */
+.catalog-container{
+
+}
+
+.catalog-list{
+    gap: 30px 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.catalog-list-item{
+    width: 322px;
+    height: 513px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 -4px 6px rgba(0, 0, 0, 0.2), 
+              -4px 0 6px rgba(0, 0, 0, 0.2), 4px 0 6px rgba(0, 0, 0, 0.2);
 }
